@@ -1,27 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<title>Document</title>
+	<title>Bake some cookies</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Josefin+Slab|McLaren|Patua+One|Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Choose a flavor and amount:</h1>
-    <form action="">
-    	Amount: <input type="number" name="amount" id="amount" min="1"><label for="amount"></label><br>
-    	<br>
-        Flavor: <select name="flavor" id="flavor">
-        <option value="Lemon">Lemon</option>
-        <option value="Chocolate">Chocolate</option>
-        <option value="Sugar">Sugar</option>
-        </select><br>
-        <br>
-        <input type="submit" id="submit">
-        <input type="reset" value="It never happened">
-    </form>
+    <fieldset>
+        <form action="">
+            <div>
+                <label for="type" class="label">Type of dough:</label> 
+                <div class="select-style">
+                    <select name="type" id="type" class="form">
+                        <option value="regular">Regular</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="glutenfree">Gluten-Free</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="flavor" class="label">Flavor:</label> 
+                <div class="select-style">
+                    <select name="flavor" id="flavor" class="form">
+                        <option value="sugar">Sugar</option>
+                        <option value="lemon">Lemon</option>
+                        <option value="chocolate">Chocolate</option> 
+                    </select>
+                </div>
+            </div>
+            <div>
+                <input type="button" id="button" value="Bake">
+                <input type="reset" id="reset" value="It never happened">
+            </div>
+        </form>
+    </fieldset>
+
+
+    <div id="bear" class="bear">
+        <section class="bearpic">
+            <img src="bear.png" alt="bear">
+        </section>
+        <section class="sign">
+            <p>I love cookies!!!</p>
+            <p>Let's bake some together. Choose a type of dough and flavor.</p>
+        </section>
+    </div>
+
+<!-- regular cookies -->
+    <div id="regsugar" class="regsugar show">
+        <h1>Easy Sugar Cookies</h1>
+        <h2>"Quick and easy sugar cookies! They are really good, plain or with candies in them."</h2>
+        <p>Ingredients:</p>
+            <ul>
+                <li>2 3/4 cups all-purpose flour</li>
+                <li>1 teaspoon baking soda</li>
+                <li>1/2 teaspoon baking powder</li>
+                <li>1 cup butter, softened</li>
+                <li>1 1/2 cups white sugar</li>
+                <li>1 egg</li>
+                <li>1 teaspoon vanilla extract</li>
+            </ul>
+        <p>Directions:</p>
+            <ol>
+                <li>Preheat oven to 375 degrees F (190 degrees C). In a small bowl, stir together flour, baking soda, and baking powder. Set aside.</li>
+                <li>In a large bowl, cream together the butter and sugar until smooth. Beat in egg and vanilla. Gradually blend in the dry ingredients. Roll rounded teaspoonfuls of dough into balls, and place onto ungreased cookie sheets.</li>
+                <li>Bake 8 to 10 minutes in the preheated oven, or until golden. Let stand on cookie sheet two minutes before removing to cool on wire racks.</li>
+            </ol>
+    </div>
+
+    <div id="reglemon" class="reglemon show">    
+        <h1>Easy Lemon Cookies</h1>
+        <h2>"The basic cake mix cookie with a twist."</h2>
+        <p>Ingredients:</p>
+            <ul>
+                <li>1 (18.25 ounce) package lemon cake mix</li>
+                <li>2 eggs</li>
+                <li>1/3 cup vegetable oil</li>
+                <li>1 teaspoon lemon extract</li>
+                <li>1/3 cup confectioners' sugar for decoration</li>    
+            </ul>
+        <p>Directions:</p>
+            <ol>
+                <li>Preheat oven to 375 degrees F (190 degrees C).</li>
+                <li>Pour cake mix into a large bowl. Stir in eggs, oil, and lemon extract until well blended. Drop teaspoonfuls of dough into a bowl of confectioners' sugar. Roll them around until they're lightly covered. Once sugared, put them on an ungreased cookie sheet.</li>
+                <li>Bake for 6 to 9 minutes in the preheated oven. The bottoms will be light brown, and the insides chewy.</li>
+            </ol>
+    </div>
+
+    <div id="regchocolate" class="regchocolate show">    
+        <h1>Chocolate Cookies</h1>
+        <h2>"Crisp edges, chewy middles."</h2>
+        <p>Ingredients:</p>
+            <ul>
+                <li>1 1⁄4 cups butter or 1 1⁄4 cups margarine, softened</li>
+                <li>2 cups sugar</li>
+                <li>2 eggs</li>
+                <li>2 teaspoons vanilla extract</li>
+                <li>2 cups all-purpose flour</li>
+                <li>3⁄4 cup cocoa</li>
+                <li>1 teaspoon baking soda</li>
+                <li>1⁄2 teaspoon salt</li>
+                <li>2 cups peanut butter chips (12 oz. pkg.) or 2 cups semi-sweet chocolate chips (12 oz. pkg.)</li>
+            </ul>
+        <p>Directions:</p>
+            <ol>
+                <li>Heat oven to 350°.</li>
+                <li>Add eggs and vanilla; beat well.</li>
+                <li>Combine flour, cocoa, baking soda and salt; gradually blend into creamed mixture. Stir in peanut butter or chocolate chips.</li>
+                <li>Drop by teaspoonfuls onto ungreased cookie sheet. Bake 8-9 minutes. (Do not overbake; cookies will be soft. They will puff while baking and flatten while cooling.).</li>
+                <li>Cool slightly; remove from cookie sheet onto wire rack. Cool completely.</li>
+            </ol>
+    </div>
+
+<!-- vegan cookies -->
+    <div id="vegansugar" class="vagansugar show">   
+        <h1>Vegan Sugar Cookies</h1>
+        <h2>"Just delicious."</h2>
+        <p>Ingredients:</p>
+            <ul>
+                <li>1 1/2 cups powdered sugar</li>
+                <li>1 cup vegan margarine, softened</li>
+                <li>1/4 cup vanilla soymilk</li>
+                <li>1 teaspoon vanilla</li>
+                <li>1/2 teaspoon almond extract</li>
+                <li>2 1/2 cups all-purpose flour</li>
+                <li>1 teaspoon baking soda</li>
+                <li>2 tablespoons cornstarch</li>
+                <li>1 teaspoon cream of tartar</li>
+            </ul>
+        <p>Directions:</p>
+            <ol>
+                <li>In large bowl, beat 1 1/2 cups powdered sugar, the margarine, 1/4 cup soymilk, 1 teaspoon vanilla and almond extract with electric mixer on medium speed to combine. Stir in flour, cornstarch, baking soda and cream of tartar until blended. Cover and refrigerate at least 2 hours.</li>
+                <li>AHeat oven to 375° F. Lightly grease cookie sheet with shortening or cooking spray. Divide dough in half. Roll each dough half to1/4 inch thickness on generously floured surface. Cut into desired shapes with 2- to 2 1/2-inch cookie cutters. On cookie sheet, place cutouts about 2 inches apart.</li>
+                <li>Bake 7 to 8 minutes or until edges are light brown. Remove from cookie sheet to cooling rack.
+                </li>
+            </ol>
+    </div>
+
+    <div id="veganlemon" class="vaganlemon show">    
+        <h1>Vegan Lemon Cookies</h1>
+        <h2>"Easy and very yummy!"</h2>
+        <p>Ingredients:</p>
+            <ul>
+                <li>1/2 cup earth balance margarine (or other vegan margarine)</li>
+                <li>1 cup granulated cane sugar</li>
+                <li>1 teaspoon vanilla extract</li>
+                <li>1 tablespoon cornstarch (mixed with 3 tablespoons of water)</li>
+                <li>1 tablespoon fresh lemon zest</li>
+                <li>1 tablespoon fresh lemon juice</li>
+                <li>1 1/2 cups all-purpose flour</li>  
+                <li>1/4 teaspoon salt</li>
+                <li>1 tablespoon ener-G baking powder (or 1/4 teaspoon baking powder with 1/8 teaspoon baking soda)</li>
+                <li>powdered sugar to garnish</li>
+            </ul>
+        <p>Directions:</p>
+            <ol>
+                <li>Preheat oven to 350 degrees F.</li>
+                <li>Mix first 7 ingredients well in a mixing bowl. Add flour and baking powder last. Mix again. Drop tablespoon sized pieces of dough onto a prepared cookie sheet, about 3 inches apart from each other.</li>
+                <li>Bake about 10 minutes, or until edges are beginning to get slightly golden brown.
+                </li>
+                <li>Allow cookies to cool on cookie sheet about 3 minutes before moving them to cooling rack. Once they are cool, dust with powdered sugar, if desired, and enjoy!</li>
+            </ol>
+    </div>
+
+    <div id="veganchocolate" class="vaganchocolate show">
+        <h1>Vegan Chocolate Cookies</h1>
+        <h2>"Toothsome!"</h2>
+        <p>Ingredients:</p>
+            <ul>
+                <li>3⁄4 cup canola oil</li>
+                <li>2 cups sugar</li>
+                <li>2 teaspoons vanilla</li>
+                <li>1 tablespoon flax seed, plus - </li>
+                <li>1 teaspoon flax seed</li>
+                <li>1⁄2 cup soymilk</li>
+                <li>2 cups flour</li>  
+                <li>3⁄4 cup cocoa powder</li>
+                <li>1 teaspoon baking soda</li>
+                <li>1⁄2 teaspoon salt</li>
+            </ul>
+        <p>Directions:</p>
+            <ol>
+                <li>Preheat oven to 350°F.</li>
+                <li>Grind flax seeds in a blender until they become a fine powder, then add the soy milk and blend for about 30 seconds more and set aside.</li>
+                <li>In a large bowl, sift together cocoa, flour, baking soda and salt.</li>
+                <li>Cream the sugar and oil in a separate large bowl. Add the flax/soy milk mixture and mix well. Stir in the vanilla.</li>
+                <li>Slowly mix in the dry ingredients (the original recipe does not call for a mixer, but you may want to use yours.).</li>
+                <li>Roll dough into 1" balls and flatten into disks about 1 1/2" in diameter.</li>
+                <li>Place on an ungreased cookie sheet about 1" apart and bake for 10 minutes.</li>
+                <li>Let rest on the cookie sheet for about 5 minutes, then remove with a spatula to a cooling rack and cool completely.</li>
+            </ol>
+    </div>
+
+<!-- gluten-free cookies -->
+    <div id="gfsugar" class="gfsugar show">    
+        <h1>Gluten-Free Sugar Cookies</h1>
+        <h2>"Soft, sweet, and full of cheer!"</h2>
+        <p>Ingredients:</p>
+            <ul>
+                <li>1 cup sugar</li>
+                <li>1/2 cup butter, softened</li>
+                <li>1 large egg</li>
+                <li>1 tablespoon water or milk</li>
+                <li>1 1/2 teaspoons vanilla</li>
+                <li>1/4 teaspoon salt</li>
+                <li>1/4 teaspoon ground cinnamon (optional)</li>  
+                <li>1/2 teaspoon xanthan gum (omit if your all-purpose flour has it)</li>
+                <li>2 cups gluten-free all-purpose flour + more for rolling/dusting</li> 
+            </ul>
+        <p>Directions:</p>
+            <ol>
+                <li>In a large bowl, cream the sugar and butter at medium speed.</li>
+                <li>Add the egg, water, vanilla, salt, and cinnamon (if using). Blend until mixed well.</li>
+                <li>Add the xanthan gum (if using) and flour. Mix at a low speed until well combined.
+                </li>
+                <li>Cover and refrigerate for at least 1 hour.</li>
+                <li>Preheat the oven to 350F. Line a baking sheet with parchment paper and set aside.</li>
+                <li>Roll out the dough onto a lightly floured surface, about 1/4-inch thick.</li>
+                <li>Cut out the dough with selected cookie cutters, and place the cookies on the baking sheet. Make sure the cookies are not touching. Reform and roll out the scrap dough, then continue cutting more cookies.</li>
+                <li>Bake for 10 to 12 minutes. Remove from the oven, and let the cookies cool for 5 minutes on the cookie sheet before removing them to a cooling rack. Cool completely before decorating.</li>
+            </ol>
+    </div>
+
+    <div id="gfchocolate" class="gfchocolate show">   
+        <h1>Gluten-Free Chocolate Cookies</h1>
+        <h2>"Chocolate in three forms!!!"</h2>
+        <p>Ingredients:</p>
+            <ul>
+                <li>2 cups good quality gluten-free flour blend</li>
+                <li>1/2 cup baking cocoa</li>
+                <li>2 tsp. baking powder</li>
+                <li>1/2 tsp. salt</li>
+                <li>16 oz. semi-sweet chocolate chunks or chips</li>
+                <li>4 large eggs</li>
+                <li>2 tsp. pure vanilla extract</li>  
+                <li>1/2 teaspoon xanthan gum (oomit if using a flour blend with xanthan or guar gum)</li>
+                <li>10 Tbsp. salted butter, room temp.</li>
+                <li>1 1/2 cup packed brown sugar</li>
+                <li>1/2 cup sugar</li>
+                <li>1 1/2 cups semisweet chocolate chips</li>   
+            </ul>
+        <p>Directions:</p>
+            <ol>
+                <li>In a medium bowl, whisk together the flour, xanthan gum, cocoa, baking powder and salt. Set aside.</li>
+                <li>Melt the semi-sweet chocolate chunks or chips in the microwave in 30 second intervals, stirring after each. Once melted completely, set aside to cool a bit.</li>
+                <li>In the bowl of your stand mixer, beat the butter at medium speed until smooth and creamy, about 45 seconds.
+                </li>
+                <li>Beat in the sugars until combined, about 45 seconds. The mixture will look granular.</li>
+                <li>Reduce the speed to low and gradually beat in the eggs and vanilla until incorporated, about 45 seconds.</li>
+                <li>Add the melted chocolate in a stream and beat until combined, about 1 minute. With the mixer on low speed, add the dry ingredients mixture and mix just until combined. Do not overmix! Stir in the additional chocolate chips.</li>
+                <li>Cover with plastic wrap and let stand at room temperature about 20-30 minutes. The dough consistency will become more fudge-like. You can skip this step, but your cookies will spread more during baking if you bake them right away.</li>
+                <li>Whatever you do, do NOT put the dough in the refrigerator! It will harden like concrete!</li>
+                <li>Preheat oven to 350°. Line 2 sheets with parchment paper. Use a medium cookie/ice-cream scoop, rounded. My cookie dough balls weighed 1-1.25 oz. each, if that helps you!</li>
+                <li>Scoop 12 cookies per large cookie sheet. You should have enough dough for about 3 1/2 dozen cookies.</li>
+                <li>Bake each cookie sheet for 12 minutes or until the edges of the cookies have just begun to set but the centers are still very soft. If baking two pans at once, be sure to rotate the pans front to back and top shelf to bottom shelf partway through the baking time. I prefer baking one pan at a time for best results.</li>
+                <li>Cool the cookies on the sheets about 5 minutes or until set, then transfer to cooling racks.</li>
+                <li>Enjoy with a glass of milk!</li>
+            </ol>
+    </div>
+
+    <div id="gflemon" class="gflemon show">    
+        <h1>Gluten-Free Lemon Cookies</h1>
+        <h2>"Gluten Free Lemon Cookies that you’ll really love!"</h2>
+        <p>Ingredients:</p>
+            <ul>
+                <li>1.5 cups all purpose gluten free flour</li>
+                <li>1/4 teaspoon xanthan gum (omit if your flour has gum added)</li>
+                <li>1/2 cup butter, or dairy free margarin</li>
+                <li>1 cup sugar</li>
+                <li>1/4 tsp salt</li>
+                <li>1 large egg</li>
+                <li>1/2 tsp gluten free baking powder</li>  
+                <li>zest of 1 lemon</li>
+                <li>1/2 tsp vanilla extract</li>
+                <li>1 tbsp fresh lemon juice</li>
+                <li>1/4 cup of powdered sugar to dust cookies</li>    
+            </ul>
+        <p>Directions:</p>
+            <ol>
+                <li>Preheat your oven to 350F.</li>
+                <li>Line a large cookie sheet with parchment paper.</li>
+                <li>Cream margarine and sugar together until combined.
+                </li>
+                <li>Add egg, vanilla, lemon zest and lemon juice to the mixture and mix briefly to combine.</li>
+                <li>In a separate bowl mix together the flour, xanthan gum, baking powder and salt, you want to make sure the gum is evenly distributed.</li>
+                <li>Add the flour mixture slowly to the margarine and sugar and mix together, don't forget to scrape the sides and bottom of the bowl and make sure it's all incorporated.</li>
+                <li>Drop tablespoonfuls of the cookie dough onto your lined cookie sheet.</li>
+                <li>Flatten the cookie out some more to about 3/8ths - 1/4 of an inch thick. You can simply use your hand or squash it a little with a fork.</li>
+                <li>Repeat until your cookie sheet is full and bake for 13 -15 minutes.</li>
+                <li>Allow to cool a little before transferring from baking sheet, dust with powdered sugar.</li>
+                <li>ookies are best eaten within a day or two, you can freeze them.</li>
+            </ol>
+    </div>
+
 <script src="jquery-3.2.1.min.js"></script>
-<script src="cookies.js"></script>	
 <script src="js.js"></script>	
 </body>
 </html>
